@@ -32,7 +32,7 @@
 
 </head>
 
-<body class="index-page">
+<body class="index-page" >
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
@@ -85,6 +85,7 @@
     <section id="hero" class="hero section light-background">
 
       <div class="container">
+        
         <div class="row gy-4 justify-content-center justify-content-lg-between">
           <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center">
             <h1 data-aos="fade-up">Enjoy Your Healthy<br>Delicious Food</h1>
@@ -208,7 +209,9 @@
     <!-- Stats Section -->
     <section id="stats" class="stats section dark-background">
 
-      <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
+  
+      <img src="{{ asset('assets/img/stats-bg.jpg') }}" class="menu-img img-fluid" alt="">
+      </a>
 
       <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
 
@@ -859,7 +862,7 @@
           <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member">
               <div class="member-img">
-              <img src="{{ asset('assets/img/chefs/chefs-1.jpg') }}" class="img-fluid" alt="">
+              <img src="{{ asset('assets/img/Juan.jpg') }}" class="img-fluid" alt="">
 
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -869,7 +872,7 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Walter White</h4>
+                <h4>Juan Abednego</h4>
                 <span>Master Chef</span>
                 <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
               </div>
@@ -879,7 +882,7 @@
           <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member">
               <div class="member-img">
-              <img src="{{ asset('assets/img/chefs/chefs-2.jpg') }}" class="img-fluid" alt="">
+              <img src="{{ asset('assets/img/Alvina.jpg') }}" class="img-fluid" alt="">
 
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -889,7 +892,7 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
+                <h4>Alvina Siallagan</h4>
                 <span>Patissier</span>
                 <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
               </div>
@@ -899,7 +902,7 @@
           <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member">
               <div class="member-img">
-              <img src="{{ asset('assets/img/chefs/chefs-3.jpg') }}" class="img-fluid" alt="">
+              <img src="{{ asset('assets/img/Roberto.jpg') }}" class="img-fluid" alt="">
 
                 <div class="social">
                   <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -909,7 +912,7 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>William Anderson</h4>
+                <h4>Roberto</h4>
                 <span>Cook</span>
                 <p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.</p>
               </div>
@@ -935,7 +938,7 @@
 
         <div class="row g-0" data-aos="fade-up" data-aos-delay="100">
 
-          <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);"></div>
+          <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/Ataraxia.jpg);"></div>
 
           <div class="col-lg-8 d-flex align-items-center reservation-form-bg" data-aos="fade-up" data-aos-delay="200">
             <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
@@ -1174,9 +1177,8 @@
           <h4>Follow Us</h4>
           <div class="social-links d-flex">
             <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.facebook.com/people/Ataraxia-Balige/61572251962842/" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/ataraxia.balige" class="instagram"><i class="bi bi-instagram"></i></a>
           </div>
         </div>
 
