@@ -95,7 +95,7 @@
             <div class="event-content">
                 <h3>Live Music Night</h3>
                 <p>Nikmati malam dengan live music dari band lokal favorit Anda.</p>
-                <a href="#" class="btn-event">Beli Tiket</a>
+                <a href="{{ route('pilih-kursi') }}" class="btn-event">Beli Tiket</a>
             </div>
         </div>
 
