@@ -23,7 +23,7 @@ Route::get('/', function () {
 
 Route::get('/index', function () {
     return view('index');
-})->middleware(['auth', 'verified'])->name('index');
+})->name('index');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
