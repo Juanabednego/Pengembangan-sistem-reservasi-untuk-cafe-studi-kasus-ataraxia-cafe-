@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BookTableController;
+use App\Http\Controllers\PilihKursiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
+    require __DIR__.'/auth.php';
 });
 
 Route::get('/index', function () {
@@ -28,4 +31,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+Route::get('/book-table', [BookTableController::class, 'index'])->name('book.table');
+
+
+Route::get('/pilih-kursi', [PilihKursiController::class, 'index'])->name('pilih-kursi');
