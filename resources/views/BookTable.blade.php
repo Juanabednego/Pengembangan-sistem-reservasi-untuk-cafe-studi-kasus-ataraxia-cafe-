@@ -90,32 +90,16 @@
     <h2 class="event-title">Pilih Event / Kegiatan</h2>
 
     <div class="event-grid">
+        @foreach($events as $event)
         <div class="event-card">
-            <img src="{{ asset('assets/img/Last child.jpg') }}" class="event-img" alt="Live Music">
+        <img src="{{ asset($event->image) }}" class="event-img" alt="{{ $event->name }}">
             <div class="event-content">
-                <h3>Live Music Night</h3>
-                <p>Nikmati malam dengan live music dari band lokal favorit Anda.</p>
+                <h3>{{ $event->name }}</h3>
+                <p>{{ $event->description }}</p>
                 <a href="{{ route('pilih-kursi') }}" class="btn-event">Beli Tiket</a>
             </div>
         </div>
-
-        <div class="event-card">
-            <img src="{{ asset('assets/img/Marsada.jpg') }}" class="event-img" alt="Coffee Workshop">
-            <div class="event-content">
-                <h3>Live Music Night</h3>
-                <p>Nikmati malam dengan live music dari band lokal favorit Anda.</p>
-                <a href="#" class="btn-event">Beli Tiket</a>
-            </div>
-        </div>
-
-        <div class="event-card">
-            <img src="{{ asset('assets/img/Avenged.jpg') }}" class="event-img" alt="Karaoke Night">
-            <div class="event-content">
-                <h3>Live Music Night</h3>
-                <p>Nikmati malam dengan live music dari band lokal favorit Anda.</p>
-                <a href="#" class="btn-event">Beli Tiket</a>
-            </div>
-        </div>
+        @endforeach
     </div>
 </div>
 
